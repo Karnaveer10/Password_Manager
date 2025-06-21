@@ -1,12 +1,42 @@
-# React + Vite
+# 🔐 Password Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and secure password manager built with **React**, featuring full **CRUD (Create, Read, Update, Delete)** functionality. This application allows users to manage their login credentials (site name, username, and password) with client-side **encryption** and **persistent storage** using `localStorage`.
 
-Currently, two official plugins are available:
+> ⚠️ For demonstration and learning purposes only. Not intended for production-level password management without proper backend and advanced encryption.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Add, view, update, and delete credentials
+- ✅ Store **site name**, **username**, and **password**
+- ✅ Passwords are **encrypted** before saving to localStorage
+- ✅ Clean and responsive UI using **React Hooks**
+- ✅ Persistent data with browser **localStorage**
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech         | Purpose                     |
+|--------------|------------------------------|
+| React        | Frontend framework            |
+| JavaScript   | Application logic             |
+| CSS          | Styling                       |
+| localStorage | Client-side data persistence  |
+| Crypto-js *(optional)* | Encryption library |
+
+---
+
+## 📂 Project Structure
+
+src/
+├── components/
+│ ├── CredentialForm.jsx
+│ ├── CredentialList.jsx
+│ └── CredentialItem.jsx
+├── assets/
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
